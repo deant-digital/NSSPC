@@ -5,6 +5,10 @@ using namespace std;
 int main() {
     string str;
     getline(cin, str);
+    if (str.length() > 25) {
+        cout << "Invalid Length";
+        return 0;
+    }
     stringstream ss;
     unordered_set<string> set;
     vector<string> vec;
@@ -18,7 +22,7 @@ int main() {
         }
         if (isalpha(c)) ss << c;
     }
-    if (ss.str().length() && !set.count(ss.str())) vec.push_back(ss.str());
+    if (!ss.str().empty() && !set.count(ss.str())) vec.push_back(ss.str());
     for (int i = 0; i < vec.size(); ++i) {
         if (i) cout << " ";
         cout << vec[i];

@@ -14,13 +14,13 @@ int main() {
     const double center = m / 2 + 1;
     if (delta == 0) {
         cout << "One intersection";
-        cout << center << " " << m * center + c;
+        cout << center << ", " << m * center + c;
         return 0;
     }
     cout << "Two intersections";
     const double difference = sqrt(delta) / 2;
     const double x1 = center + difference;
     const double x2 = center - difference;
-    cout << x1 << " " << m * x1 + c << endl;
-    cout << x2 << " " << m * x2 + c;
+    cout << x1 << ", " << m * x1 + c << endl;
+    cout << x2 << ", " << m * x2 + c;
 }

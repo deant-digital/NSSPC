@@ -11,10 +11,9 @@ int main() {
     }
     int sum = 0;
     for (const char &c: str) {
-        if (const int value = tolower(c) - 'a' + 1;
-            value == 2 || value == 3 || value == 5 || value == 7 || value == 11
-            || value == 13 || value == 17 || value == 19 || value == 23)
-            sum += value;
+        if (const int v = tolower(c) - 'a' + 1;
+            v == 2 || v == 3 || v == 5 || v == 7 || v == 11 || v == 13 || v == 17 || v == 19 || v == 23)
+            sum += v;
     }
     cout << sum;
 }

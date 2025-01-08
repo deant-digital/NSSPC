@@ -10,12 +10,14 @@ int main() {
         bl = false;
         for (int i = 1; i < str.length(); ++i) {
             if (str[i - 1] == str[i]) {
-                str.erase(i - 1, 2);
+                int j = i + 1;
+                while (j < str.length() && str[j] == str[i]) ++j;
+                str.erase(i - 1, j - i + 1);
                 bl = true;
                 break;
             }
         }
     } while (bl);
-    if (str.length()) cout << str;
+    if (!str.empty()) cout << str;
     else cout << "Empty String";
 }

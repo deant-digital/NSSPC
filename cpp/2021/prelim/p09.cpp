@@ -2,8 +2,12 @@
 
 using namespace std;
 
-int gcd(const int x, const int y) {
-    return x == 0 ? y : gcd(y % x, x);
+int gcd(int x, int y) {
+    while (x != 0) {
+        y %= x;
+        swap(x, y);
+    }
+    return y;
 }
 
 int lcm(const int x, const int y) {

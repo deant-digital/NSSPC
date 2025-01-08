@@ -8,7 +8,7 @@ int main() {
     if (x > y) swap(x, y);
     if (y > z) swap(y, z);
     if (x > y) swap(x, y);
-    if (x + y < z) {
+    if (x + y <= z) {
         cout << "Invalid";
         return 0;
     }
