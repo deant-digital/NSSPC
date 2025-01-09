@@ -1,0 +1,66 @@
+[package]
+name = "rust-2021-prelim"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[[bin]]
+name = "p01"
+path = "p01.rs"
+
+[[bin]]
+name = "p02"
+path = "p02.rs"
+
+[[bin]]
+name = "p03"
+path = "p03.rs"
+
+[[bin]]
+name = "p04"
+path = "p04.rs"
+
+[[bin]]
+name = "p05"
+path = "p05.rs"
+
+[[bin]]
+name = "p06"
+path = "p06.rs"
+
+[[bin]]
+name = "p07"
+path = "p07.rs"
+
+[[bin]]
+name = "p08"
+path = "p08.rs"
+
+[[bin]]
+name = "p09"
+path = "p09.rs"
+
+[[bin]]
+name = "p10"
+path = "p10.rs"
+
+[[bin]]
+name = "p11"
+path = "p11.rs"
+
+[[bin]]
+name = "p12"
+path = "p12.rs"
+
+[[bin]]
+name = "p13"
+path = "p13.rs"
+
+[[bin]]
+name = "p14"
+path = "p14.rs"
+
+[[bin]]
+name = "p15"
+path = "p15.rs"
