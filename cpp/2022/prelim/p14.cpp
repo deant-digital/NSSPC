@@ -13,7 +13,7 @@ int main() {
             cin >> value;
             if (value == 0) dp[i][j] = 0;
             else if (i == 0 || j == 0) dp[i][j] = 1;
-            else dp[i][j] = min(dp[i - 1][j], dp[i][j - 1]) + 1;
+            else dp[i][j] = min(dp[i - 1][j - 1], min(dp[i - 1][j], dp[i][j - 1])) + 1;
             if (dp[i][j] > largest_square) largest_square = dp[i][j];
         }
     }

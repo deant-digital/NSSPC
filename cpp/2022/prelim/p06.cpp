@@ -13,11 +13,11 @@ int main() {
     cout << fixed << setprecision(7);
     const double center = m / 2 + 1;
     if (delta == 0) {
-        cout << "One intersection";
+        cout << "One intersection" << endl;
         cout << center << ", " << m * center + c;
         return 0;
     }
-    cout << "Two intersections";
+    cout << "Two intersections" << endl;
     const double difference = sqrt(delta) / 2;
     const double x1 = center + difference;
     const double x2 = center - difference;
