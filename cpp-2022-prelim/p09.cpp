@@ -13,7 +13,7 @@ int main() {
     unordered_set<string> set;
     vector<string> vec;
     for (const char &c: str) {
-        if ((!isalpha(c) || isupper(c)) && ss.str().length()) {
+        if ((!isalpha(c) || isupper(c)) && !ss.str().empty()) {
             if (!set.count(ss.str())) {
                 set.insert(ss.str());
                 vec.push_back(ss.str());
