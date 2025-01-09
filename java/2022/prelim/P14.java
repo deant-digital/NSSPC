@@ -13,7 +13,7 @@ public class P14 {
                 int value = scanner.nextInt();
                 if (value == 0) dp[i][j] = 0;
                 else if (i == 0 || j == 0) dp[i][j] = 1;
-                else dp[i][j] = Math.min(dp[i - 1][j], dp[i][j - 1]) + 1;
+                else dp[i][j] = Math.min(dp[i - 1][j - 1], Math.min(dp[i - 1][j], dp[i][j - 1])) + 1;
                 if (dp[i][j] > largestSquare) largestSquare = dp[i][j];
             }
         }
